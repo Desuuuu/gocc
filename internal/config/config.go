@@ -126,19 +126,19 @@ func (this *ConfigRecord) OutDir() string {
 }
 
 func (this *ConfigRecord) ErrorsDir() string {
-	return path.Join(this.outDir, "errors")
+	return filepath.Join(this.outDir, "errors")
 }
 
 func (this *ConfigRecord) ParserDir() string {
-	return path.Join(this.outDir, "parser")
+	return filepath.Join(this.outDir, "parser")
 }
 
 func (this *ConfigRecord) ScannerDir() string {
-	return path.Join(this.outDir, "scanner")
+	return filepath.Join(this.outDir, "scanner")
 }
 
 func (this *ConfigRecord) TokenDir() string {
-	return path.Join(this.outDir, "token")
+	return filepath.Join(this.outDir, "token")
 }
 
 func (this *ConfigRecord) Package() string {
@@ -206,13 +206,14 @@ func getOutDir(outDirSpec, wd string) string {
 	if strings.HasPrefix(outDirSpec, wd) {
 		return outDirSpec
 	}
-	return path.Join(wd, outDirSpec)
+	return filepath.Join(wd, outDirSpec)
 }
 
 func defaultPackage(wd string) (string, error) {
 	pkg, parent, err := currentModule()
 	if err == nil {
 		pkg = pkg + strings.TrimPrefix(wd, parent)
+		pkg = sanitizePackage(pkg)
 		return pkg, nil
 	}
 
@@ -258,7 +259,7 @@ func currentModule() (string, string, error) {
 		parent = d
 	}
 
-	full := path.Join(parent, info.Name())
+	full := filepath.Join(parent, info.Name())
 	data, err := os.ReadFile(full)
 	if err != nil {
 		return "", "", fmt.Errorf("reading file '%s': %s", full, err)
