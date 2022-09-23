@@ -20,12 +20,12 @@ string_lit : '"' {.} '"' ;
 
 !whitespace : ' ' | '\t' | '\n' | '\r' ;
 
-<<import "github.com/goccmack/gocc/example/bools/ast">>
+<<import "github.com/Desuuuu/gocc/example/bools/ast">>
 
 BoolExpr
 	:	BoolExpr1													<< $0, nil >>
 	;
-	
+
 BoolExpr1
 	:	Val															<< $0, nil >>
 	|	BoolExpr "&" BoolExpr1										<< ast.NewBoolAndExpr($0, $2) >>

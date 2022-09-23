@@ -19,9 +19,9 @@ import (
 	"io"
 	"strings"
 
-	"github.com/goccmack/gocc/internal/ast"
-	"github.com/goccmack/gocc/internal/lexer/symbols"
-	"github.com/goccmack/gocc/internal/util"
+	"github.com/Desuuuu/gocc/internal/ast"
+	"github.com/Desuuuu/gocc/internal/lexer/symbols"
+	"github.com/Desuuuu/gocc/internal/util"
 )
 
 type Item struct {

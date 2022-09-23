@@ -21,11 +21,11 @@ import (
 	"path"
 	"text/template"
 
-	"github.com/goccmack/gocc/internal/ast"
-	"github.com/goccmack/gocc/internal/io"
-	"github.com/goccmack/gocc/internal/parser/lr1/action"
-	"github.com/goccmack/gocc/internal/parser/lr1/items"
-	"github.com/goccmack/gocc/internal/token"
+	"github.com/Desuuuu/gocc/internal/ast"
+	"github.com/Desuuuu/gocc/internal/io"
+	"github.com/Desuuuu/gocc/internal/parser/lr1/action"
+	"github.com/Desuuuu/gocc/internal/parser/lr1/items"
+	"github.com/Desuuuu/gocc/internal/token"
 )
 
 func GenActionTable(outDir string, prods ast.SyntaxProdList, itemSets *items.ItemSets, tokMap *token.TokenMap, zip bool) map[int]items.RowConflicts {

@@ -12,14 +12,14 @@ id : (_letter | '_') {_idchar} ;
 
 /* Syntax elements */
 
-<< import "github.com/goccmack/gocc/example/errorrecovery/ast" >>
+<< import "github.com/Desuuuu/gocc/example/errorrecovery/ast" >>
 
-StmtList : 
+StmtList :
       Stmt             << ast.NewStmtList($0) >>
     | StmtList Stmt    << ast.AppendStmt($0, $1) >>
 ;
 
-Stmt : 
+Stmt :
       id               << ast.NewStmt($0) >>
     | error
 ;

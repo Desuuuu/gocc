@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/goccmack/gocc/internal/frontend/token"
+	"github.com/Desuuuu/gocc/internal/frontend/token"
 )
 
 type testRecord struct {

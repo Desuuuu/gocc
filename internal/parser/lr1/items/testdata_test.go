@@ -17,10 +17,10 @@ package items
 import (
 	"testing"
 
-	"github.com/goccmack/gocc/internal/ast"
-	"github.com/goccmack/gocc/internal/frontend/parser"
-	"github.com/goccmack/gocc/internal/frontend/scanner"
-	"github.com/goccmack/gocc/internal/frontend/token"
+	"github.com/Desuuuu/gocc/internal/ast"
+	"github.com/Desuuuu/gocc/internal/frontend/parser"
+	"github.com/Desuuuu/gocc/internal/frontend/scanner"
+	"github.com/Desuuuu/gocc/internal/frontend/token"
 )
 
 const G1 = `

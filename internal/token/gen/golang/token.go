@@ -21,8 +21,8 @@ import (
 	"path"
 	"text/template"
 
-	"github.com/goccmack/gocc/internal/io"
-	"github.com/goccmack/gocc/internal/token"
+	"github.com/Desuuuu/gocc/internal/io"
+	"github.com/Desuuuu/gocc/internal/token"
 )
 
 func GenToken(pkg, outdir string, tokMap *token.TokenMap) {
@@ -144,7 +144,7 @@ func (t *Token) CharLiteralValue() string {
 	return string(t.Lit[1 : len(t.Lit)-1])
 }
 
-// Float32Value returns the float32 value of the token or an error if the token literal does not 
+// Float32Value returns the float32 value of the token or an error if the token literal does not
 // denote a valid float32.
 func (t *Token) Float32Value() (float32, error) {
 	if v, err := strconv.ParseFloat(string(t.Lit), 32); err != nil {
@@ -154,7 +154,7 @@ func (t *Token) Float32Value() (float32, error) {
 	}
 }
 
-// Float64Value returns the float64 value of the token or an error if the token literal does not 
+// Float64Value returns the float64 value of the token or an error if the token literal does not
 // denote a valid float64.
 func (t *Token) Float64Value() (float64, error) {
 	return strconv.ParseFloat(string(t.Lit), 64)

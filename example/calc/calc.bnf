@@ -8,10 +8,10 @@ int64 : '1'-'9' {_digit} ;
 
 /* Syntax part */
 
-<< 
+<<
 import (
-	"github.com/goccmack/gocc/example/calc/token"
-	"github.com/goccmack/gocc/example/calc/util"
+	"github.com/Desuuuu/gocc/example/calc/token"
+	"github.com/Desuuuu/gocc/example/calc/util"
 )
 >>
 
@@ -19,12 +19,12 @@ Calc : Expr;
 
 Expr :
 		Expr "+" Term	<< $0.(int64) + $2.(int64), nil >>
-	|	Term			
+	|	Term
 ;
 
 Term :
 		Term "*" Factor	<< $0.(int64) * $2.(int64), nil >>
-	|	Factor			
+	|	Factor
 ;
 
 Factor :

@@ -2,9 +2,9 @@
 Have a look at [https://github.com/goccmack/gogll](https://github.com/goccmack/gogll) for scannerless GLL parser generation.
 # Gocc
 
-![Build Status](https://github.com/goccmack/gocc/workflows/build/badge.svg)
-[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/goccmack/gocc)
-[![Go Report Card](https://goreportcard.com/badge/github.com/goccmack/gocc)](https://goreportcard.com/report/github.com/goccmack/gocc)
+![Build Status](https://github.com/Desuuuu/gocc/workflows/build/badge.svg)
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/Desuuuu/gocc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Desuuuu/gocc)](https://goreportcard.com/report/github.com/Desuuuu/gocc)
 
 ## Introduction
 
@@ -33,10 +33,10 @@ See the [README](example/bools/README) for an included example.
 
 * First download and Install Go From http://golang.org/
 * Setup your GOPATH environment variable.
-* Next in your command line run: go get github.com/goccmack/gocc (go get will
-  git clone gocc into GOPATH/src/github.com/goccmack/gocc and run go install)
-* Alternatively clone the source: https://github.com/goccmack/gocc . Followed
-  by go install github.com/goccmack/gocc
+* Next in your command line run: go get github.com/Desuuuu/gocc (go get will
+  git clone gocc into GOPATH/src/github.com/Desuuuu/gocc and run go install)
+* Alternatively clone the source: https://github.com/Desuuuu/gocc . Followed
+  by go install github.com/Desuuuu/gocc
 * Finally, make sure that the bin folder where the gocc binary is located is
   in your PATH environment variable.
 

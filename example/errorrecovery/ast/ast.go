@@ -1,7 +1,7 @@
 package ast
 
 import (
-	"github.com/goccmack/gocc/example/errorrecovery/token"
+	"github.com/Desuuuu/gocc/example/errorrecovery/token"
 )
 
 type (

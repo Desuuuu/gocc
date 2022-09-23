@@ -18,8 +18,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/goccmack/gocc/example/bools/token"
-	"github.com/goccmack/gocc/example/bools/util"
+	"github.com/Desuuuu/gocc/example/bools/token"
+	"github.com/Desuuuu/gocc/example/bools/util"
 )
 
 type Attrib interface{}

@@ -3,8 +3,8 @@
 package parser
 
 import (
-	"github.com/goccmack/gocc/example/calc/token"
-	"github.com/goccmack/gocc/example/calc/util"
+	"github.com/Desuuuu/gocc/example/calc/token"
+	"github.com/Desuuuu/gocc/example/calc/util"
 )
 
 type (
