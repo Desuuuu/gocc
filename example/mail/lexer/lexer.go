@@ -6,7 +6,7 @@ import (
 	"os"
 	"unicode/utf8"
 
-	"github.com/goccmack/gocc/example/mail/token"
+	"github.com/Desuuuu/gocc/example/mail/token"
 )
 
 const (

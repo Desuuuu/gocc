@@ -3,7 +3,7 @@ package ast
 import (
 	"fmt"
 
-	"github.com/goccmack/gocc/example/usercontext/token"
+	"github.com/Desuuuu/gocc/example/usercontext/token"
 )
 
 type Attrib interface{}

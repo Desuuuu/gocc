@@ -9,7 +9,7 @@ jobs:
       matrix:
         go: [1.19]
     env:
-      working-directory: ./src/github.com/goccmack/gocc
+      working-directory: ./src/github.com/Desuuuu/gocc
 
     steps:
     - name: Set GOPATH
@@ -28,7 +28,7 @@ jobs:
       uses: actions/checkout@v3
       with:
         fetch-depth: 1
-        path: src/github.com/goccmack/gocc
+        path: src/github.com/Desuuuu/gocc
 
     - name: Install linter
       run: "curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.50.1 && go install golang.org/x/tools/cmd/goimports@latest"
@@ -37,5 +37,3 @@ jobs:
     - name: Check
       run: go get && make ci
       working-directory: ${{env.working-directory}}
-
-

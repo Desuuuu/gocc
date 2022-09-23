@@ -4,7 +4,7 @@ lowercase   : 'a'-'z' { 'a'-'z' };
 
 capitalized : 'A'-'Z' { 'a'-'z' | 'A'-'Z' };
 
-<< import "github.com/goccmack/gocc/example/usercontext/ast" >>
+<< import "github.com/Desuuuu/gocc/example/usercontext/ast" >>
 
 // This grammar supports some random number of identifiers (1,N),
 // and must be ended with the literal "...42..."
@@ -21,4 +21,3 @@ Words
 	| lowercase << ast.NewIdentifier($0, $Context) >>
 	| Words lowercase << ast.NewIdentifier($1, $Context) >>
 	;
-

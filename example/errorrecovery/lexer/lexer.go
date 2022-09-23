@@ -6,7 +6,7 @@ import (
 	"os"
 	"unicode/utf8"
 
-	"github.com/goccmack/gocc/example/errorrecovery/token"
+	"github.com/Desuuuu/gocc/example/errorrecovery/token"
 )
 
 const (

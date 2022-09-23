@@ -1,6 +1,6 @@
 package parser
 
-import "github.com/goccmack/gocc/internal/ast"
+import "github.com/Desuuuu/gocc/internal/ast"
 
 var ProductionsTable = ProdTab{
 	// [0]

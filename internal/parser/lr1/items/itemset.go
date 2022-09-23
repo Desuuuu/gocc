@@ -19,10 +19,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/goccmack/gocc/internal/ast"
-	"github.com/goccmack/gocc/internal/parser/first"
-	"github.com/goccmack/gocc/internal/parser/lr1/action"
-	"github.com/goccmack/gocc/internal/parser/symbols"
+	"github.com/Desuuuu/gocc/internal/ast"
+	"github.com/Desuuuu/gocc/internal/parser/first"
+	"github.com/Desuuuu/gocc/internal/parser/lr1/action"
+	"github.com/Desuuuu/gocc/internal/parser/symbols"
 )
 
 type ItemSet struct {

@@ -14,16 +14,16 @@ id : (_letter | '_') {_idchar} ;
 
 <<
 import (
-	"github.com/goccmack/gocc/example/astx/ast"
-	"github.com/goccmack/gocc/example/astx/token"
+	"github.com/Desuuuu/gocc/example/astx/ast"
+	"github.com/Desuuuu/gocc/example/astx/token"
 )
 >>
 
-StmtList : 
+StmtList :
       Stmt             << ast.NewStmtList($0) >>
     | StmtList Stmt    << ast.AppendStmt($0, $1) >>
 ;
 
-Stmt : 
+Stmt :
       id               << ast.NewStmt($T0) >>
 ;
